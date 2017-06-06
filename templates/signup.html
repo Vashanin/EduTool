@@ -2,4 +2,39 @@
 
 {% block body %}
 
+    <div style="margin: 50px 400px; padding: 25px 50px;">
+        <form action="/new_user/" method="POST">
+            <div class="page-header">
+                <h1> Sign up, if you're teacher </h1>
+            </div>
+
+            <div class="input-group" style="margin-bottom: 15px;">
+                <span class="input-group-addon" id="basic-addon1"> Email </span>
+                <input required name="email" type="email"
+                       class="form-control" placeholder="example@email.com" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 15px;">
+                <span class="input-group-addon" id="basic-addon1"> Password </span>
+                <input required name="password" type="password"
+                       class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 15px;">
+                <span class="input-group-addon" id="basic-addon1"> Name </span>
+                <input required name="name" type="text"
+                       class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 15px;">
+                <span class="input-group-addon" id="basic-addon1"> Surname </span>
+                <input required name="surname" type="text"
+                       class="form-control" placeholder="Surname" aria-describedby="basic-addon1">
+            </div>
+
+            <button style="margin-top: 15px; margin-left: 360px; width: 100px;"
+                    type="submit" class="btn btn-primary"> Sign up </button>
+        </form>
+    </div>
+
 {% endblock %}
