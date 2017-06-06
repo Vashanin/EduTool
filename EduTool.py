@@ -17,20 +17,26 @@ def home():
 @app.route('/login/')
 def login():
     try:
-        return render_template("login.html")
+        return render_template("login.html", INFO=None, ERROR=None)
     except Exception as e:
         traceback.format_exc()
 
 @app.route("/user_auth/", methods=["POST"])
 def user_auth():
     try:
+        INFO = None
+        ERROR = None
+
         if request.method == "POST":
             user_email = request.form["user_email"]
             user_password = request.form["user_password"]
 
-            User.authenticate(user_email, user_password)
+            if User.authenticate(user_email, user_password):
+                INFO = "Welcome!"
+            else:
+                ERROR = "Oops. You enter wrong auth data."
 
-        return redirect(url_for("login"))
+        return render_template("login.html", INFO=INFO, ERROR=ERROR)
     except Exception as e:
         print("Exception has been caught: " + e.args[0])
         traceback.format_exc()

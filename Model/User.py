@@ -1,7 +1,7 @@
 import sqlite3 as sqlite
 
 class User:
-    database = "templates/database/info.db"
+    database = "info.db"
     table = "Users"
 
     def __init__(self, email, password, name, surname):
@@ -38,6 +38,8 @@ class User:
 
     @classmethod
     def init_table(cls):
+        print(cls.database)
+
         db = sqlite.connect(cls.database)
         db.row_factory = sqlite.Row
 
@@ -49,9 +51,6 @@ class User:
                 (2, "sirko@gmail.com", "3333", "Serhiy", "Mugilivskiy", "teacher"),
                 (3, "timonov@gmail.com", "2222", "Alex", "Timonov", "student")
             )
-
-            conn.execute("DROP TABLE {}".format(cls.table))
-            db.commit()
 
             conn.execute("CREATE TABLE {} (id INTEGER, email TEXT, password TEXT, name TEXT, surname TEXT, rights TEXT)"
                          .format(cls.table))
