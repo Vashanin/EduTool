@@ -1,0 +1,117 @@
+body {
+	background: rgb(236, 234, 230) url("../static/img/my_background.png") repeat left top;
+	font-family: "Century Gothic";
+	color: rgb(68,68,68);
+}
+
+#main {
+	max-width: 900px;
+	margin: 50px auto;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	box-shadow: 0 0 10px #ccc;
+	padding: 20px;
+}
+
+#main span {
+	font-size: 0.9rem;
+}
+
+#main h1 {
+	text-align: center;
+	font-weight: normal;
+}
+
+
+#main form{
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+#main input[type=text] {
+	width: 200px;
+	height: 30px;
+	font-family: 'Century Gothic';
+}
+
+#main input[type=submit]#greeting {
+	width: 800px;
+    margin: auto;
+	height: 30px;
+	font-family: 'Century Gothic';
+	font-size: 0.9rem;
+}
+#main p{
+	font-size: 0.9rem;	
+}
+
+input, select {
+	width: 300px;
+	height: 30px;
+	font-size: 1.1rem;
+	font-family: 'Century Gothic';
+}
+
+#nav{
+	float:left;
+	width:100%;
+	list-style:none;
+	margin-bottom:10px;
+    margin-top: 0px;
+    margin-left: 280px;
+}
+
+#nav li{
+	float:left;
+	margin-right:10px;
+	position:relative;
+	display:block;
+}
+#nav li a{
+	display:block;
+	padding:5px 25px;
+	color:#fff;
+	background:#EEE;
+	text-decoration:none;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его на немного */
+}
+#nav li a:hover{
+	color:#fff;
+	background:#CCC;
+	background:rgba(125,125,125,0.75); /* Выглядит полупрозрачным */
+}
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+#nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	-webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+}
+#nav ul li{
+	padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+	float:none;
+	background:url(dot.gif);
+}
+#nav ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+}
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; /* Делаем непрозрачным */
+}
+#nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+	background:#DDD;
+	background:rgba(125,125,125,0.75); /* Выглядит полупрозрачным */
+}
+#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+	text-decoration:none;
+	-webkit-transition:-webkit-transform 0.075s linear;
+}
+#nav li:hover ul li a:hover{
+	background:#DDD;
+	background:rgba(125,125,125,0.75); /* Будет полупрозрачным */
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+}
