@@ -3,6 +3,7 @@
 
 from flask import Flask, render_template, flash, request, url_for, redirect
 import traceback
+from Model.User import *
 
 app = Flask(__name__)
 
@@ -27,13 +28,15 @@ def user_auth():
             user_email = request.form["user_email"]
             user_password = request.form["user_password"]
 
+            User.authenticate(user_email, user_password)
+
         return redirect(url_for("login"))
     except Exception as e:
         print("Exception has been caught: " + e.args[0])
         traceback.format_exc()
 
 
-@app.route('/signup/')
+@app.route('/sign_up/')
 def signup():
     try:
         return render_template("signup.html")
@@ -49,7 +52,10 @@ def new_user():
             name = request.form["name"]
             surname = request.form["surname"]
 
-        return redirect(url_for("signup"))
+            user = User(email, password, name, surname)
+            User.add_user(user, "teacher")
+
+        return redirect(url_for("sign_up"))
     except Exception as e:
         print("Exception has been caught: " + e.args[0])
         traceback.format_exc()
