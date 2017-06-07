@@ -12,6 +12,8 @@ from Model.Subject import *
 app = Flask(__name__)
 app.secret_key = 'ilovematanverymuch'
 
+app.debug = True
+
 @app.route('/')
 def home():
     try:
@@ -148,16 +150,6 @@ def personal_page():
     except Exception as e:
         print("Troubles with EduTool.personal_page: " + str(e.args))
 
-@app.route("/edit_user_course/", methods=["GET"])
-def edit_user_course():
-    try:
-        if request.method == "GET":
-            id = request.form["id"]
-            session["id"] = id
-            return render_template("edit_course_face.html", ID=id)
-
-    except Exception as e:
-        print("Troubles with EduTool.edit_user_course: " + str(e.args))
 
 if __name__ == '__main__':
     app.run()
