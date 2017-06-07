@@ -54,16 +54,15 @@ class User:
 
                         max_id = conn.fetchall()
                         id = max_id[0][0] + 1
-
-                        info = (id, self.email, self.password, self.name, self.surname, rights)
-                        print(info)
-                        conn.execute(
-                            "INSERT INTO {} (id, email, password, name, surname, rights) VALUES (?,?,?,?,?,?)"
-                            .format(self.table), info)
-                        db.commit()
-
                     except Exception as e:
                         print("Inserting into empty table: " + self.table + " new index equals " + str(id))
+
+                    info = (id, self.email, self.password, self.name, self.surname, rights)
+                    print(info)
+                    conn.execute(
+                        "INSERT INTO {} (id, email, password, name, surname, rights) VALUES (?,?,?,?,?,?)"
+                            .format(self.table), info)
+                    db.commit()
 
                 except UserIsAlreadyExistException as e:
                     raise UserIsAlreadyExistException

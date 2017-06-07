@@ -16,6 +16,25 @@ class Subject:
         self.practices = []
 
     @classmethod
+    def getAllSubjectsOfTeacher(cls, teacher):
+        try:
+            db = sqlite.connect(cls.database)
+            db.row_factory = sqlite.Row
+
+            with db:
+                conn = db.cursor()
+                conn.execute("SELECT * FROM {} WHERE teacherId={}".format(cls.table, teacher[0]))
+                db.commit()
+
+                subjects = conn.fetchall()
+
+                return subjects
+
+        except Exception as e:
+            print("Troubles with getAllSubjects")
+
+
+    @classmethod
     def getAllSubjects(cls):
         try:
             db = sqlite.connect(cls.database)
@@ -25,12 +44,14 @@ class Subject:
                 conn = db.cursor()
                 conn.execute("SELECT * FROM {}".format(cls.table))
                 db.commit()
+
                 subjects = conn.fetchall()
 
                 return subjects
 
         except Exception as e:
             print("Troubles with getAllSubjects")
+
 
     @classmethod
     def getSubjectByTitle(cls, title):
@@ -86,15 +107,16 @@ class Subject:
                         max_id = conn.fetchall()
                         id = max_id[0][0] + 1
 
-                        info = (id, self.title, self.description, self.image_url, self.teacher[0])
-                        print(info)
-                        conn.execute(
-                            "INSERT INTO {} (id, title, description, imageURL, teacherId) VALUES (?,?,?,?,?)"
-                            .format(self.table), info)
-                        db.commit()
-
                     except Exception as e:
+                        print("Exception has been caught in Subject.add_subject: " + str(e.args))
                         print("Inserting into empty table: " + self.table + " new index equals " + str(id))
+
+                    info = (id, self.title, self.description, self.image_url, self.teacher[0])
+                    print(info)
+                    conn.execute(
+                        "INSERT INTO {} (id, title, description, imageURL, teacherId) VALUES (?,?,?,?,?)"
+                            .format(self.table), info)
+                    db.commit()
 
                 except SubjectIsAlreadyExistException as e:
                     raise SubjectIsAlreadyExistException

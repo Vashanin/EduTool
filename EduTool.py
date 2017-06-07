@@ -86,12 +86,25 @@ def new_user():
         print("Exception has been caught: " + e.args[0])
         traceback.format_exc()
 
-@app.route("/personal_page/")
-def personal_page():
+@app.route("/user_courses/")
+def user_courses():
     try:
-        return render_template("personal_page.html", SUBJECTS=Subject.getAllSubjects())
+        teacher = User.getUserByEmail(session["current_user"])
+
+        print(teacher)
+        print(Subject.getAllSubjectsOfTeacher(teacher))
+
+        return render_template("user_courses.html", SUBJECTS=Subject.getAllSubjectsOfTeacher(teacher))
     except Exception as e:
-        print("Troubles with personal_page method: " + str(e.args))
+        print("Troubles with user_courses method: " + str(e.args))
+        traceback.format_exc()
+
+@app.route("/all_courses/")
+def all_courses():
+    try:
+        return render_template("all_courses.html", SUBJECTS=Subject.getAllSubjects())
+    except Exception as e:
+        print("Troubles with all_courses method: " + str(e.args))
         traceback.format_exc()
 
 @app.route("/add_new_course/")
@@ -126,6 +139,14 @@ def add_new_course_handler():
     except Exception as e:
         print("Troubles with adding new course")
         traceback.format_exc()
+
+@app.route("/personal_page/")
+def personal_page():
+    try:
+        USER = User.getUserByEmail(session["current_user"])
+        return render_template("personal_page.html", USER=USER, CHANGE=False)
+    except Exception as e:
+        print("Troubles with EduTool.personal_page: " + str(e.args))
 
 if __name__ == '__main__':
     app.run()
