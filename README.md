@@ -2,7 +2,7 @@
 An application for education managing
 
 ### Description
-EduTool - is a Java application for education managing. It can be used by students and teachers to provide distance form of studying. Every teacher can sign up, create classes, define own subject and students. After that, use EduTool as platform for different home assignment and tests (with automatic checking), lections, interactive material: either created by himself or choosen from existed ones. Moreover, users have ability to communicate by moderated chat system. Thus, each student can ask and get answer from groupmates, or teachers.
+EduTool - is a Python application for education managing. It can be used by students and teachers to provide distance form of studying. Every teacher can sign up, create classes, define own subject and students. After that, use EduTool as platform for different home assignment and tests (with automatic checking), lections, interactive material: either created by himself or choosen from existed ones. Moreover, users have ability to communicate by moderated chat system. Thus, each student can ask and get answer from groupmates, or teachers.
 
 In addition, everybody has own account for sharing personal information and progress, managing courses, etc. If student is interested in some kind of course, he/she has ability to join in.
 
