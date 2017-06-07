@@ -1,9 +1,9 @@
-    # !/usr/bin/env python
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 from Exceptions.UserIsAlreadyExistException import *
 from Exceptions.SubjectIsAlreadyExistException import *
-from flask import Flask, render_template, flash, request, url_for, redirect, session
+from flask import Flask, render_template, request, url_for, session
 from flask_session import Session
 import traceback
 from Model.User import *
@@ -144,9 +144,20 @@ def add_new_course_handler():
 def personal_page():
     try:
         USER = User.getUserByEmail(session["current_user"])
-        return render_template("personal_page.html", USER=USER, CHANGE=False)
+        return render_template("personal_page.html", USER=USER)
     except Exception as e:
         print("Troubles with EduTool.personal_page: " + str(e.args))
+
+@app.route("/edit_user_course/", methods=["GET"])
+def edit_user_course():
+    try:
+        if request.method == "GET":
+            id = request.form["id"]
+            session["id"] = id
+            return render_template("edit_course_face.html", ID=id)
+
+    except Exception as e:
+        print("Troubles with EduTool.edit_user_course: " + str(e.args))
 
 if __name__ == '__main__':
     app.run()

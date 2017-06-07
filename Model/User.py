@@ -16,7 +16,6 @@ class User:
     def getUserByEmail(cls, email):
         try:
             db = sqlite.connect(cls.database)
-            db.row_factory = sqlite.Row
 
             with db:
                 conn = db.cursor()
@@ -93,6 +92,7 @@ class User:
             conn.executemany("INSERT INTO {} (id, email, password, name, surname, rights) VALUES (?,?,?,?,?,?)"
                              .format(cls.table), users)
             db.commit()
+            return True
 
     @classmethod
     def authenticate(cls, email, password):

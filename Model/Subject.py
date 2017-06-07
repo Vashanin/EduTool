@@ -12,9 +12,6 @@ class Subject:
         self.image_url = image_url
         self.teacher = teacher
 
-        self.lectures = []
-        self.practices = []
-
     @classmethod
     def getAllSubjectsOfTeacher(cls, teacher):
         try:
@@ -62,6 +59,41 @@ class Subject:
             with db:
                 conn = db.cursor()
                 conn.execute("SELECT * FROM {} WHERE title='{}'".format(cls.table, title))
+                db.commit()
+                subject = conn.fetchall()
+
+                return subject[0]
+
+        except Exception as e:
+            print("Troubles with getSubjectByTitle")
+
+    @classmethod
+    def edit(cls, id, description, imageURL):
+        try:
+            db = sqlite.connect(cls.database)
+            db.row_factory = sqlite.Row
+
+            with db:
+                conn = db.cursor()
+                conn.execute("UPDATE {} SET description='{}', imageURL='{}' WHERE id={}"
+                             .format(cls.table, description, imageURL, id))
+                db.commit()
+
+                return True
+
+        except Exception as e:
+            print("Troubles with getSubjectByTitle")
+            return False
+
+    @classmethod
+    def getSubjectById(cls, id):
+        try:
+            db = sqlite.connect(cls.database)
+            db.row_factory = sqlite.Row
+
+            with db:
+                conn = db.cursor()
+                conn.execute("SELECT * FROM {} WHERE id='{}'".format(cls.table, id))
                 db.commit()
                 subject = conn.fetchall()
 
