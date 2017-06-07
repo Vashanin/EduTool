@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dacca3cf-6dc4-438c-9d07-191d552e9da3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EduTool.py" afterPath="$PROJECT_DIR$/EduTool.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/User.py" afterPath="$PROJECT_DIR$/Model/User.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/personal_page.html" afterPath="$PROJECT_DIR$/templates/personal_page.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,30 +17,67 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/EduTool$UnitTests.coverage" NAME="UnitTests Coverage Results" MODIFIED="1496827539612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/EduTool$EduTool.coverage" NAME="EduTool Coverage Results" MODIFIED="1496827548165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/EduTool$EduTool.coverage" NAME="EduTool Coverage Results" MODIFIED="1496865848902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EduTool.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EduTool.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EduTool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="119" column="16" lean-forward="true" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
               <folding>
                 <element signature="e#52#104#0" expanded="true" />
+                <element signature="e#444#551#0" expanded="false" />
+                <element signature="e#595#741#0" expanded="false" />
+                <element signature="e#782#912#0" expanded="false" />
+                <element signature="e#979#1584#0" expanded="false" />
+                <element signature="e#1628#1759#0" expanded="false" />
+                <element signature="e#1824#2540#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnitTests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/UnitTests.py">
+      <file leaf-file-name="Subject.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Model/Subject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="321">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#470#870#0" expanded="false" />
+                <element signature="e#936#1364#0" expanded="false" />
+                <element signature="e#1415#1722#0" expanded="false" />
+                <element signature="e#1759#3335#0" expanded="false" />
+                <marker date="1496865275186" expanded="true" signature="648:662" ph="SELECT * FRO... missing_value" />
+                <marker date="1496865275186" expanded="true" signature="648:664" ph="SELECT * FRO... missing_valueWHERE" />
+                <marker date="1496865275186" expanded="true" signature="1114:1147" ph="SELECT * FRO... missing_value" />
+                <marker date="1496865275186" expanded="true" signature="1560:1652" ph="CREATE TABLE... missing_value" />
+                <marker date="1496865275186" expanded="true" signature="1964:1979" ph="SELECT missi... missing_value" />
+                <marker date="1496865275186" expanded="true" signature="2379:2399" ph="SELECT MAX(i... missing_value" />
+                <marker date="1496865275186" expanded="true" signature="2758:2837" ph="INSERT INTO missing_value... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/User.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <marker date="1496863753689" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
+                <marker date="1496863753689" expanded="true" signature="1054:1069" ph="SELECT missi... missing_value" />
+                <marker date="1496863753689" expanded="true" signature="1466:1486" ph="SELECT MAX(i... missing_value" />
+                <marker date="1496863753689" expanded="true" signature="1842:1922" ph="INSERT INTO missing_value... " />
+                <marker date="1496863753689" expanded="true" signature="2946:2957" ph="DROP TABLE m... " />
+                <marker date="1496863753689" expanded="true" signature="3031:3124" ph="CREATE TABLE... missing_value" />
+                <marker date="1496863753689" expanded="true" signature="3226:3306" ph="INSERT INTO missing_value... " />
+                <marker date="1496863753689" expanded="true" signature="3603:3617" ph="SELECT * FRO... missing_value" />
               </folding>
             </state>
           </provider>
@@ -45,41 +86,25 @@
       <file leaf-file-name="personal_page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/personal_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/User.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1496827196693" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
-                <marker date="1496827196693" expanded="true" signature="1075:1090" ph="SELECT missi... missing_value" />
-                <marker date="1496827196693" expanded="true" signature="1486:1506" ph="SELECT MAX(i... missing_value" />
-                <marker date="1496827196693" expanded="true" signature="1861:1941" ph="INSERT INTO missing_value... " />
-                <marker date="1496827196693" expanded="true" signature="2992:3003" ph="DROP TABLE m... " />
-                <marker date="1496827196693" expanded="true" signature="3077:3170" ph="CREATE TABLE... missing_value" />
-                <marker date="1496827196693" expanded="true" signature="3272:3352" ph="INSERT INTO missing_value... " />
-                <marker date="1496827196693" expanded="true" signature="3649:3663" ph="SELECT * FRO... missing_value" />
+                <element signature="e#55#77#0#HTML" expanded="true" />
+                <element signature="e#142#163#0#HTML" expanded="true" />
+                <element signature="e#744#765#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_new_course.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/add_new_course.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#285#332#0#HTML" expanded="true" />
+                <element signature="e#1475#1516#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +113,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="8" selection-end-column="15" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,21 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+            <state relative-caret-position="66">
+              <caret line="6" column="90" lean-forward="false" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -153,13 +168,16 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/templates/signup.html" />
         <option value="$PROJECT_DIR$/Exceptions/UserIsAlreadyExistException.py" />
-        <option value="$PROJECT_DIR$/templates/personal_page.html" />
         <option value="$PROJECT_DIR$/Model/__init__.py" />
-        <option value="$PROJECT_DIR$/Model/User.py" />
         <option value="$PROJECT_DIR$/Test/UnitTests.py" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/Model/User.py" />
+        <option value="$PROJECT_DIR$/Exceptions/SubjectIsAlreadyExistException.py" />
+        <option value="$PROJECT_DIR$/Model/Subject.py" />
+        <option value="$PROJECT_DIR$/templates/add_new_course.html" />
+        <option value="$PROJECT_DIR$/templates/personal_page.html" />
         <option value="$PROJECT_DIR$/EduTool.py" />
       </list>
     </option>
@@ -194,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,20 +221,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="EduTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EduTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EduTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,6 +268,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -512,13 +516,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3224852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49260354" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -548,6 +552,111 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#52#104#0" expanded="true" />
+            <element signature="e#444#551#0" expanded="false" />
+            <element signature="e#595#741#0" expanded="false" />
+            <element signature="e#782#912#0" expanded="false" />
+            <element signature="e#979#1584#0" expanded="false" />
+            <element signature="e#1628#1759#0" expanded="false" />
+            <element signature="e#1824#2540#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/UnitTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/personal_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <element signature="e#55#77#0#HTML" expanded="true" />
+            <element signature="e#142#163#0#HTML" expanded="true" />
+            <element signature="e#744#765#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/User.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1496863753689" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1054:1069" ph="SELECT missi... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1466:1486" ph="SELECT MAX(i... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1842:1922" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="2946:2957" ph="DROP TABLE m... " />
+            <marker date="1496863753689" expanded="true" signature="3031:3124" ph="CREATE TABLE... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="3226:3306" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="3603:3617" ph="SELECT * FRO... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EduTool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#52#104#0" expanded="true" />
+            <element signature="e#444#551#0" expanded="false" />
+            <element signature="e#595#741#0" expanded="false" />
+            <element signature="e#782#912#0" expanded="false" />
+            <element signature="e#979#1584#0" expanded="false" />
+            <element signature="e#1628#1759#0" expanded="false" />
+            <element signature="e#1824#2540#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -557,7 +666,7 @@
         <state relative-caret-position="119">
           <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -566,7 +675,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#55#77#0#HTML" expanded="true" />
+            <element signature="e#142#163#0#HTML" expanded="true" />
+            <element signature="e#744#765#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -619,14 +732,14 @@
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1496827196693" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1075:1090" ph="SELECT missi... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1486:1506" ph="SELECT MAX(i... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1861:1941" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="2992:3003" ph="DROP TABLE m... " />
-            <marker date="1496827196693" expanded="true" signature="3077:3170" ph="CREATE TABLE... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="3272:3352" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="3649:3663" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1054:1069" ph="SELECT missi... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1466:1486" ph="SELECT MAX(i... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1842:1922" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="2946:2957" ph="DROP TABLE m... " />
+            <marker date="1496863753689" expanded="true" signature="3031:3124" ph="CREATE TABLE... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="3226:3306" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="3603:3617" ph="SELECT * FRO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -637,6 +750,12 @@
           <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
           <folding>
             <element signature="e#52#104#0" expanded="true" />
+            <element signature="e#444#551#0" expanded="false" />
+            <element signature="e#595#741#0" expanded="false" />
+            <element signature="e#782#912#0" expanded="false" />
+            <element signature="e#979#1584#0" expanded="false" />
+            <element signature="e#1628#1759#0" expanded="false" />
+            <element signature="e#1824#2540#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -686,14 +805,14 @@
           <caret line="80" column="20" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1496827196693" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1075:1090" ph="SELECT missi... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1486:1506" ph="SELECT MAX(i... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1861:1941" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="2992:3003" ph="DROP TABLE m... " />
-            <marker date="1496827196693" expanded="true" signature="3077:3170" ph="CREATE TABLE... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="3272:3352" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="3649:3663" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1054:1069" ph="SELECT missi... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1466:1486" ph="SELECT MAX(i... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1842:1922" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="2946:2957" ph="DROP TABLE m... " />
+            <marker date="1496863753689" expanded="true" signature="3031:3124" ph="CREATE TABLE... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="3226:3306" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="3603:3617" ph="SELECT * FRO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -704,6 +823,12 @@
           <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding>
             <element signature="e#52#104#0" expanded="true" />
+            <element signature="e#444#551#0" expanded="false" />
+            <element signature="e#595#741#0" expanded="false" />
+            <element signature="e#782#912#0" expanded="false" />
+            <element signature="e#979#1584#0" expanded="false" />
+            <element signature="e#1628#1759#0" expanded="false" />
+            <element signature="e#1824#2540#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -760,51 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exceptions/UserIsAlreadyExistException.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -824,11 +908,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_page.html">
+    <entry file="file://$PROJECT_DIR$/Model/User.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1496863753689" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1054:1069" ph="SELECT missi... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1466:1486" ph="SELECT MAX(i... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1842:1922" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="2946:2957" ph="DROP TABLE m... " />
+            <marker date="1496863753689" expanded="true" signature="3031:3124" ph="CREATE TABLE... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="3226:3306" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="3603:3617" ph="SELECT * FRO... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" column="90" lean-forward="false" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/UnitTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exceptions/UserIsAlreadyExistException.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exceptions/SubjectIsAlreadyExistException.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_new_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#285#332#0#HTML" expanded="true" />
+            <element signature="e#1475#1516#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,52 +1002,63 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1496827196693" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1075:1090" ph="SELECT missi... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1486:1506" ph="SELECT MAX(i... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1861:1941" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="2992:3003" ph="DROP TABLE m... " />
-            <marker date="1496827196693" expanded="true" signature="3077:3170" ph="CREATE TABLE... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="3272:3352" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="3649:3663" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1054:1069" ph="SELECT missi... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1466:1486" ph="SELECT MAX(i... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="1842:1922" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="2946:2957" ph="DROP TABLE m... " />
+            <marker date="1496863753689" expanded="true" signature="3031:3124" ph="CREATE TABLE... missing_value" />
+            <marker date="1496863753689" expanded="true" signature="3226:3306" ph="INSERT INTO missing_value... " />
+            <marker date="1496863753689" expanded="true" signature="3603:3617" ph="SELECT * FRO... missing_value" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/UnitTests.py">
+    <entry file="file://$PROJECT_DIR$/templates/personal_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="204">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/User.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1496827196693" expanded="true" signature="566:599" ph="SELECT * FRO... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1075:1090" ph="SELECT missi... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1486:1506" ph="SELECT MAX(i... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="1861:1941" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="2992:3003" ph="DROP TABLE m... " />
-            <marker date="1496827196693" expanded="true" signature="3077:3170" ph="CREATE TABLE... missing_value" />
-            <marker date="1496827196693" expanded="true" signature="3272:3352" ph="INSERT INTO missing_value... " />
-            <marker date="1496827196693" expanded="true" signature="3649:3663" ph="SELECT * FRO... missing_value" />
+            <element signature="e#55#77#0#HTML" expanded="true" />
+            <element signature="e#142#163#0#HTML" expanded="true" />
+            <element signature="e#744#765#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EduTool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="119" column="16" lean-forward="true" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
           <folding>
             <element signature="e#52#104#0" expanded="true" />
+            <element signature="e#444#551#0" expanded="false" />
+            <element signature="e#595#741#0" expanded="false" />
+            <element signature="e#782#912#0" expanded="false" />
+            <element signature="e#979#1584#0" expanded="false" />
+            <element signature="e#1628#1759#0" expanded="false" />
+            <element signature="e#1824#2540#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Subject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#470#870#0" expanded="false" />
+            <element signature="e#936#1364#0" expanded="false" />
+            <element signature="e#1415#1722#0" expanded="false" />
+            <element signature="e#1759#3335#0" expanded="false" />
+            <marker date="1496865275186" expanded="true" signature="648:662" ph="SELECT * FRO... missing_value" />
+            <marker date="1496865275186" expanded="true" signature="648:664" ph="SELECT * FRO... missing_valueWHERE" />
+            <marker date="1496865275186" expanded="true" signature="1114:1147" ph="SELECT * FRO... missing_value" />
+            <marker date="1496865275186" expanded="true" signature="1560:1652" ph="CREATE TABLE... missing_value" />
+            <marker date="1496865275186" expanded="true" signature="1964:1979" ph="SELECT missi... missing_value" />
+            <marker date="1496865275186" expanded="true" signature="2379:2399" ph="SELECT MAX(i... missing_value" />
+            <marker date="1496865275186" expanded="true" signature="2758:2837" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>

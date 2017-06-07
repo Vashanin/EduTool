@@ -2,17 +2,15 @@
 # -*- coding: utf-8 -*-
 
 from Exceptions.UserIsAlreadyExistException import *
+from Exceptions.SubjectIsAlreadyExistException import *
 from flask import Flask, render_template, flash, request, url_for, redirect, session
 from flask_session import Session
 import traceback
 from Model.User import *
+from Model.Subject import *
 
 app = Flask(__name__)
 app.secret_key = 'ilovematanverymuch'
-app.debug = True
-
-#if __name__ == '__main__':
-#    app.run()
 
 @app.route('/')
 def home():
@@ -57,7 +55,6 @@ def user_auth():
         print("Exception has been caught: " + e.args[0])
         traceback.format_exc()
 
-
 @app.route('/sign_up/')
 def signup():
     try:
@@ -79,7 +76,7 @@ def new_user():
 
             user = User(email, password, name, surname)
             try:
-                User.add_user(user, "teacher")
+                user.add_user("teacher")
                 INFO = "You account has been succesfully created."
             except UserIsAlreadyExistException as e:
                 ERROR = e.getInfo()
@@ -92,9 +89,43 @@ def new_user():
 @app.route("/personal_page/")
 def personal_page():
     try:
-        USER = User.getUserByEmail(session["current_user"])
-
-        return render_template("personal_page.html", USER=USER)
+        return render_template("personal_page.html", SUBJECTS=Subject.getAllSubjects())
     except Exception as e:
-        print("Trougles with personal_page method: " + str(e.args))
+        print("Troubles with personal_page method: " + str(e.args))
         traceback.format_exc()
+
+@app.route("/add_new_course/")
+def add_new_course():
+    try:
+        return render_template("add_new_course.html", ERROR=None, INFO=None)
+    except Exception as e:
+        print("Troubles with adding new course")
+        traceback.format_exc()
+
+@app.route("/add_new_course_handler/", methods=["POST", "GET"])
+def add_new_course_handler():
+    try:
+        if request.method == "POST":
+            title = request.form["title"]
+            description = request.form["description"]
+            image_url = request.form["image_url"]
+
+            teacher = User.getUserByEmail(session["current_user"])
+            subject = Subject(title, description, image_url, teacher)
+
+            ERROR = None
+            INFO = None
+
+            try:
+                subject.add_subject()
+                INFO = "New subject has been succesfully added"
+            except SubjectIsAlreadyExistException as e:
+                ERROR = "Subject with this title has been already created"
+
+            return render_template("add_new_course.html", ERROR=ERROR, INFO=INFO)
+    except Exception as e:
+        print("Troubles with adding new course")
+        traceback.format_exc()
+
+if __name__ == '__main__':
+    app.run()

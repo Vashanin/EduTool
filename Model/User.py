@@ -29,42 +29,41 @@ class User:
         except Exception as e:
             print("Troubles with getUserByEmail")
 
-    @classmethod
-    def add_user(cls, user, rights):
+    def add_user(self, rights):
         try:
-            db = sqlite.connect(cls.database)
+            db = sqlite.connect(self.database)
             db.row_factory = sqlite.Row
 
             with db:
                 conn = db.cursor()
 
                 try:
-                    conn.execute("SELECT {} FROM {}".format("email", cls.table))
+                    conn.execute("SELECT {} FROM {}".format("email", self.table))
                     db.commit()
 
                     all_existed_emails = conn.fetchall()
 
                     for existed_email in all_existed_emails:
-                        if user.email == existed_email[0]:
+                        if self.email == existed_email[0]:
                             raise UserIsAlreadyExistException
 
                     id = 1
                     try:
-                        conn.execute("SELECT MAX(id) FROM {}".format(cls.table))
+                        conn.execute("SELECT MAX(id) FROM {}".format(self.table))
                         db.commit()
 
                         max_id = conn.fetchall()
                         id = max_id[0][0] + 1
 
-                        info = (id, user.email, user.password, user.name, user.surname, rights)
+                        info = (id, self.email, self.password, self.name, self.surname, rights)
                         print(info)
                         conn.execute(
                             "INSERT INTO {} (id, email, password, name, surname, rights) VALUES (?,?,?,?,?,?)"
-                            .format(cls.table), info)
+                            .format(self.table), info)
                         db.commit()
 
                     except Exception as e:
-                        print("Inserting into empty table: " + cls.table + " new index equals " + str(id))
+                        print("Inserting into empty table: " + self.table + " new index equals " + str(id))
 
                 except UserIsAlreadyExistException as e:
                     raise UserIsAlreadyExistException
@@ -74,8 +73,6 @@ class User:
 
     @classmethod
     def init_table(cls):
-        print(cls.database)
-
         db = sqlite.connect(cls.database)
         db.row_factory = sqlite.Row
 
