@@ -20,12 +20,11 @@ class User:
 
             with db:
                 conn = db.cursor()
-
                 conn.execute("SELECT * FROM {} WHERE email='{}'".format(cls.table, email))
                 db.commit()
-
                 user = conn.fetchall()
-                print(user[0])
+
+                return user[0]
 
         except Exception as e:
             print("Troubles with getUserByEmail")
@@ -68,7 +67,6 @@ class User:
                         print("Inserting into empty table: " + cls.table + " new index equals " + str(id))
 
                 except UserIsAlreadyExistException as e:
-                    print("raised")
                     raise UserIsAlreadyExistException
         except Exception as e:
             print("Troubles with adding user: " + str(e.args[0]))

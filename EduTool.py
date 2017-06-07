@@ -88,8 +88,9 @@ def new_user():
 @app.route("/personal_page/")
 def personal_page():
     try:
-        User.getUserByEmail(session["current_user"])
-        return render_template("personal_page.html", USER=session["current_user"])
+        USER = User.getUserByEmail(session["current_user"])
+
+        return render_template("personal_page.html", USER=USER)
     except Exception as e:
         print("Trougles with personal_page method: " + str(e.args))
         traceback.format_exc()
