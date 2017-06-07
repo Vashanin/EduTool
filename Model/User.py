@@ -1,4 +1,5 @@
 import sqlite3 as sqlite
+import traceback
 
 class User:
     database = "info.db"
@@ -12,29 +13,32 @@ class User:
 
     @classmethod
     def add_user(cls, user, rights):
-        db = sqlite.connect(cls.database)
-        db.row_factory = sqlite.Row
+        try:
+            db = sqlite.connect(cls.database)
+            db.row_factory = sqlite.Row
 
-        with db:
-            conn = db.cursor()
+            with db:
+                conn = db.cursor()
 
-            id = 1
-            try:
-                conn.execute("SELECT MAX(id) FROM {}".format(cls.table))
+                id = 1
+                try:
+                    conn.execute("SELECT MAX(id) FROM {}".format(cls.table))
+                    db.commit()
+
+                    max_id = conn.fetchall()
+                    id = max_id[0][0] + 1
+                except Exception as e:
+                    print("Inserting into empty table: " + cls.table + " new index equals " + str(id))
+
+                info = (id, user.email, user.password, user.name, user.surname, rights)
+                print(info)
+                conn.execute(
+                    "INSERT INTO {} (id, email, password, name, surname, rights) VALUES (?,?,?,?,?,?)"
+                    .format(cls.table), info)
                 db.commit()
-
-                max_id = conn.fetchall()
-                id = max_id[0][0] + 1
-            except Exception as e:
-                print("Inserting into empty table: " + cls.table + " new index equals " + str(id))
-
-            info = (id, user.email, user.password, user.name, user.surname, rights)
-
-            conn.executemany(
-                "INSERT INTO {} (id, email, password, name, surname, rights) VALUES (?,?,?,?,?,?)"
-                .format(cls.table), info)
-            db.commit()
-
+        except Exception as e:
+            print("Troubles with adding user: " + str(e.args[0]))
+            traceback.format_exc()
 
     @classmethod
     def init_table(cls):

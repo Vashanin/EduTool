@@ -45,7 +45,7 @@ def user_auth():
 @app.route('/sign_up/')
 def signup():
     try:
-        return render_template("signup.html")
+        return render_template("signup.html", INFO=None)
     except Exception as e:
         traceback.format_exc()
 
@@ -61,7 +61,7 @@ def new_user():
             user = User(email, password, name, surname)
             User.add_user(user, "teacher")
 
-        return redirect(url_for("sign_up"))
+        return render_template("signup.html", INFO="Your account has been succesfully created!")
     except Exception as e:
         print("Exception has been caught: " + e.args[0])
         traceback.format_exc()

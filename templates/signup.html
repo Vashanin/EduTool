@@ -1,6 +1,9 @@
 {% extends "header.html" %}
 
 {% block body %}
+    {% if (INFO != None):%}
+        <div class="alert alert-info" role="alert"> {{INFO}} </div>
+    {% endif %}
 
     <div style="margin: 50px 400px; padding: 25px 50px;">
         <form action="/new_user/" method="POST">
