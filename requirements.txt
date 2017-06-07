@@ -24,7 +24,6 @@ pyOpenSSL==0.15.1
 pyparsing==2.0.3
 pyserial==3.0.1
 python-dateutil==2.4.2
-python-libtorrent==1.0.7
 pytz==2014.10
 pyxdg==0.25
 redis==2.10.5
