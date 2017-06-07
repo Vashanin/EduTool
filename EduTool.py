@@ -9,6 +9,10 @@ from Model.User import *
 
 app = Flask(__name__)
 app.secret_key = 'ilovematanverymuch'
+app.debug = True
+
+#if __name__ == '__main__':
+#    app.run()
 
 @app.route('/')
 def home():
@@ -94,6 +98,3 @@ def personal_page():
     except Exception as e:
         print("Trougles with personal_page method: " + str(e.args))
         traceback.format_exc()
-
-if __name__ == '__main__':
-    app.run()
